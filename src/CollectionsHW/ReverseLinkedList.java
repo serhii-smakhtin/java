@@ -3,7 +3,7 @@ package CollectionsHW;
 import java.util.LinkedList;
 
 public class ReverseLinkedList {
-    public static void main() {
+    public static void init() {
         System.out.println("Reverse Linked List");
         LinkedList<Integer> list = new LinkedList<>();
 
