@@ -9,6 +9,8 @@ public class Main {
         ReverseLinkedList.init();
         StringIsValid.init();
         MoveZeroes.init();
+
+        // Stream API HW
         Primary.init();
     }
 }
