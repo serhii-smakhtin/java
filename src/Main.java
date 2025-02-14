@@ -1,6 +1,7 @@
 import CollectionsHW.ReverseLinkedList;
 import CollectionsHW.StringIsValid;
 import CollectionsHW.MoveZeroes;
+import StreamAPIHW.Primary;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,5 +9,6 @@ public class Main {
         ReverseLinkedList.init();
         StringIsValid.init();
         MoveZeroes.init();
+        Primary.init();
     }
 }
