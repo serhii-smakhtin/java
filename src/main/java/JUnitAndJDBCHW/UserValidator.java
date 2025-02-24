@@ -10,7 +10,6 @@ public class UserValidator {
             throw new IllegalArgumentException("Invalid email format!");
         }
 
-        // Дополнительные проверки для телефона можно добавить
         if (userRegistrationDto.getPhoneNumber() != null && !userRegistrationDto.getPhoneNumber().matches("\\d+")) {
             throw new IllegalArgumentException("Invalid phone number format!");
         }
