@@ -2,6 +2,7 @@ import CollectionsHW.ReverseLinkedList;
 import CollectionsHW.StringIsValid;
 import CollectionsHW.MoveZeroes;
 import StreamAPIHW.Primary;
+import JUnitAndJDBCHW.Index;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,5 +13,8 @@ public class Main {
 
         // Stream API HW
         Primary.init();
+
+        // JUnit and JDBC HW
+        Index.init();
     }
 }
