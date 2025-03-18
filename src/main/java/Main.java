@@ -3,6 +3,7 @@ import CollectionsHW.StringIsValid;
 import CollectionsHW.MoveZeroes;
 import StreamAPIHW.Primary;
 import JUnitAndJDBCHW.Index;
+import HibernateHW.UserRoleApp;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +17,8 @@ public class Main {
 
         // JUnit and JDBC HW
         Index.init();
+
+        // Hibernate HW
+        UserRoleApp.main(args);
     }
 }

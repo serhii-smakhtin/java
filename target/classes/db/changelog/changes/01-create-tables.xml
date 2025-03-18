@@ -1,0 +1,41 @@
+<databaseChangeLog>
+    <changeSet id="1" author="dev">
+        <createTable tableName="users">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="roles">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_roles">
+            <column name="user_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <addForeignKeyConstraint baseTableName="user_roles"
+                                     baseColumnNames="user_id"
+                                     referencedTableName="users"
+                                     referencedColumnNames="id"/>
+            <addForeignKeyConstraint baseTableName="user_roles"
+                                     baseColumnNames="role_id"
+                                     referencedTableName="roles"
+                                     referencedColumnNames="id"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
